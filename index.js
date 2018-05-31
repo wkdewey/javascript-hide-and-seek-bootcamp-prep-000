@@ -24,7 +24,7 @@ function deepestChild() {
       return current;
     }
     for (let i = 0; i < current.length; i++) {
-      next.push(current[i]);
+      next.push(current.childNodes);
     }
     current = next.shift();
   }
