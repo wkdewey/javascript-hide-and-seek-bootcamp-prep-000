@@ -23,9 +23,12 @@ function deepestChild() {
     if(current.querySelector('div')) {
       for (let i = 0; i < current.length; i++) {
         next.push(current.querySelector('div'));
-      }current = next.shift();
+      }
+      current = next.shift();
     }
-    
+    else {
+      return current;
+    }
     
   }
 }
