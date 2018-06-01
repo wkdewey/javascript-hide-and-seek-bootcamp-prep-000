@@ -21,11 +21,11 @@ function deepestChild() {
   var next = [];
   while(current) {
     if(current.querySelector('div')) {
-      
-    }
-    for (let i = 0; i < current.length; i++) {
+      for (let i = 0; i < current.length; i++) {
       next.push(current.querySelector('div'));
     }
+    }
+    
     current = next.shift();
   }
 }
